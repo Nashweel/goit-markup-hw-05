@@ -109,6 +109,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -686,15 +689,19 @@ body {
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
   opacity: 1;
+  overflow: hidden;
+  transform: translateY(0%);
 }
 
 .portfolio-thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
   position: absolute;
   opacity: 0;
+  overflow: hidden;
   pointer-events: none;
   display: flex;
 
@@ -708,6 +715,9 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
