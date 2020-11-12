@@ -362,6 +362,151 @@ body {
 .close-button:focus .close-plus {
   fill: var(--accent-color);
 }
+
+/* ---Формы--- */
+
+.form {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.form-title {
+  max-width: 450px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form-field {
+  transition: var(--time) var(--cubic);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: -50%;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  transition: var(--time) var(--cubic);
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form:hover .form-input {
+  border-color: var(--accent-color);
+}
+
+.modal-form:hover .form-svg {
+  fill: var(--accent-color);
+}
+
+.form-input:focus + .form-svg {
+  fill: var(--accent-color);
+}
+
+.form-svg {
+  transition: var(--time) var(--cubic);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  transform: translateY(50%);
+  pointer-events: none;
+}
+
+.field-text label {
+  display: flex;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.text-area {
+  width: 100%;
+  transition: var(--time) var(--cubic);
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 16px 12px;
+}
+
+.text-area:hover,
+.text-area:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.agreement {
+  margin-right: auto;
+  margin-bottom: 31px;
+}
+
+.agreement-label {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+
+  transition: var(--time) var(--cubic);
+
+  color: var(--primary-white-color);
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
 /* --------------------Секция Advantage------------------ */
 
 .advantage {
